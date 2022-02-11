@@ -40,7 +40,7 @@ RUN tar -xvf node-v14.3.0-linux-x64.tar.xz
 RUN mv node-v14.3.0-linux-x64 nodejs
 RUN ln -s /opt/nodejs/bin/node /usr/local/bin/node
 RUN ln -s /opt/nodejs/bin/npm /usr/local/bin/npm
-RUN npm config set registry https://registry.npm.taobao.org
+RUN npm config set registry https://registry.npmmirror.com
 ## 编译前端
 WORKDIR /opt/loonflow/frontend
 RUN npm install --unsafe-perm
